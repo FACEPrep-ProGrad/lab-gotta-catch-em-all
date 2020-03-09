@@ -1,12 +1,7 @@
 package model;
 
 
-//PROGRESSION - 4
-//Go to JAVA Resouces - src/model and create a child class called Dragonite inside the model package with the following arguments
-//String characteristics 
-//String type
-//String evolution
-//String baseExp
+
 //
 //Dragonite must extend the Pokemon class
 //Generate appropriate getters and setters
