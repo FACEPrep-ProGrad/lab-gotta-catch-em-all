@@ -24,3 +24,50 @@ package model;
  * evolution = "RAICHU" 
  * baseExp = "112"
  */
+public class Pikachu extends Pokemon {
+	String characteristics;
+	String type;
+	String evolution;
+	String baseExp;
+	int pokemonNumber = 25;
+	
+	
+	public Pikachu(String pokemonName, int pokemonNumber, String characteristics, String type, String evolution,
+			String baseExp) {
+		super(pokemonName, pokemonNumber);
+		this.pokemonName =pokemonName;
+		this.pokemonNumber = pokemonNumber;
+		this.characteristics = characteristics;
+		this.type = type;
+		this.evolution = evolution;
+		this.baseExp = baseExp;
+	}
+	public String getCharacteristics() {
+		return "Pikachu is an Electric-type Pokémon, which was introduced in Generation I. Over the years, Pikachu has become so popular that it serves as the Pokémon franchise mascot.";
+	}
+	public void setCharacteristics(String characteristics) {
+		this.characteristics = characteristics;
+	}
+	public String getType() {
+		return "ELECTRIC";
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getEvolution() {
+		return "RAICHU";
+	}
+	public void setEvolution(String evolution) {
+		this.evolution = evolution;
+	}
+	public String getBaseExp() {
+		return "112";
+	}
+	public void setBaseExp(String baseExp) {
+		this.baseExp = baseExp;
+	}
+		
+	
+} 
+	
+	
