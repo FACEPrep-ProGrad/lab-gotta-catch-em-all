@@ -15,7 +15,52 @@ package model;
 //Use the predefined values given below as constructor arguments 
 //pokemonName = Dragonite
 //pokemonNumber = 149
-//characteristics = "Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism."
+//characteristics = "Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokï¿½mon with human-like intelligence. It shows signs of altruism."
 //type = "DRAGON"
 //evolution = "DRATINI"
 //baseExp = "270" 
+public class Dragonite extends Pokemon{
+	String characteristics; 
+	String type;
+	String evolution;
+	int baseExp;
+	//getters for characteristics
+	public String getCharacteristics() {
+		return this.characteristics;
+	}
+	//setters for characteristics
+	public void setCharacteristics(String characteristics) {
+		this.characteristics = characteristics;
+	}
+	//getter for type
+	public String getType() {
+		return this.type;
+	}
+	//setter for type
+	public void setType(String type) {
+		this.type = type;
+	}
+	//getter of evolution
+	public String getEvolution() {
+		return this.evolution;
+	}
+	//setter of evolution
+	public void setEvolution(String evolution) {
+		this.evolution = evolution;
+	}
+	//getter for baseExp
+	public int getBaseExp() {
+		return this.baseExp;
+	}
+	//setter for baseExp
+	public void setBaseExp(int baseExp) {
+		this.baseExp = baseExp;
+	}
+	public Dragonite(String pokemonName,int pokemonNumber,String characteristics,String type,String evolution,int baseExp) {
+		super(pokemonName,pokemonNumber);
+		this.characteristics = characteristics;
+		this.type = type;
+		this.evolution = evolution;
+		this.baseExp =baseExp;
+	}
+}

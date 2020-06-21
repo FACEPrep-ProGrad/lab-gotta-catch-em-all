@@ -14,10 +14,47 @@ package model;
 //Use the predefined values given below as constructor arguments 
 //pokemonName = Bulbasaur
 //pokemonNumber = 001
-//characteristics = "Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region."
+//characteristics = "Bulbasaur is a Grass/Poison-type Pokï¿½mon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokï¿½mon in the Kanto region."
 //type = "POISON"
 //evolution = "IVYSAUR"
 //baseExp = "64" 
 
 
 
+public class Bulbasaur extends Pokemon{
+	String characteristics; 
+	String type;
+	String evolution;
+	int baseExp;
+	public String getCharacteristics() {
+		return this.characteristics;
+	}
+	public void setCharacteristics(String characteristics) {
+		this.characteristics = characteristics;
+	}
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getEvolution() {
+		return this.evolution;
+	}
+	public void setEvolution(String evolution) {
+		this.evolution = evolution;
+	}
+	public int getBaseExp() {
+		return this.baseExp;
+	}
+	public void setBaseExp(int baseExp) {
+		this.baseExp = baseExp;
+	}
+	public Bulbasaur(String pokemonName,int pokemonNumber,String characteristics,String type,String evolution,int baseExp) {
+		super(pokemonName , pokemonNumber);
+		this.characteristics = characteristics;
+		this.type = type;
+		this.evolution = evolution;
+		this.baseExp = baseExp;
+	}
+}
