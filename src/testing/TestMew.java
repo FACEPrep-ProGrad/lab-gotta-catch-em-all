@@ -1,5 +1,5 @@
 package testing;
-/*
+
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -55,11 +55,11 @@ public class TestMew {
 	@Test
 	public void testBaseExpMethod() {
 		Mew p = new Mew("AAA",4,"Mew is a Psychic-type Mythical Pokémon introduced in Generation I. Mew is notable for its unique ability to learn every Technical Machine, Technical Record & Hidden Machine.","PSYCHIC","   NONE  ", "64" );
-		int temp = 64;
+		String temp = "64";
 		assertEquals(temp,p.getBaseExp());		
 		try {
 			Mew p1 = new Mew(null,0,null,null,null,null);
-			temp = 0;
+			temp = null;
 			p1.getBaseExp();
 		}
 		catch(Exception e) {
@@ -67,4 +67,4 @@ public class TestMew {
 		}
 	}
 }
-*/
+
