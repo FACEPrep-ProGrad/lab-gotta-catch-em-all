@@ -10,6 +10,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import model.Bulbasaur;
+import model.Charizard;
+import model.Dragonite;
+import model.Mew;
+import model.Pikachu;
+
 @WebServlet(urlPatterns = { "/pokemon" })
 public class PokemonController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -38,62 +44,69 @@ public class PokemonController extends HttpServlet {
 		if (value1 != null) {
 			
 			// Create the object for Bulbasaur class and use getters to retrieve the values	
-		/*	  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message1",//getter);
-			request.setAttribute("character1", //getter);
-			request.setAttribute("type1",//getter;
-			request.setAttribute("evolution1", //getter);
-			request.setAttribute("baseExp1", //getter);*/
+			Bulbasaur b=new Bulbasaur("Bulbasaur",001,"Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region.",
+					"POISON","IVYSAUR","64" );
+			  
+			msg = "<center>" + b.getPokemonName() + "  #" + b.getPokemonNumber();
+			request.setAttribute("message1",b.getPokemonNumber());
+			request.setAttribute("character1", b.getCharacteristics());
+			request.setAttribute("type1",b.getType());
+			request.setAttribute("evolution1", b.getEvolution());
+			request.setAttribute("baseExp1", b.getBaseExp());
 		}
 
 		if (value2 != null) {
 			// Create the object for Charizard class and use getters to retrieve the values	
+			Charizard b=new Charizard("Charizard",006,"Charizard is fit and strong and has the ability to soar up to ridiculous heights. With a single breath of fire, it can burn down forests and melt gigantic glaciers.",
+					"FIRE","CHARMELEON","240" );
 			
-			/*	  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message2",//getter);
-			request.setAttribute("character2", //getter);
-			request.setAttribute("type2",//getter;
-			request.setAttribute("evolution2", //getter);
-			request.setAttribute("baseExp2", //getter);*/
+			msg = "<center>" + b.getPokemonName() + "  #" + b.getPokemonNumber();
+			request.setAttribute("message2",b.getPokemonNumber());
+			request.setAttribute("character2", b.getCharacteristics());
+			request.setAttribute("type2",b.getType());
+			request.setAttribute("evolution2", b.getEvolution());
+			request.setAttribute("baseExp2", b.getBaseExp());
 		}
 
 		if (value3 != null) {
 
 			// Create the object for Dragonite class and use getters to retrieve the values	
+			Dragonite b=new Dragonite("Dragonite",149,"Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.",
+					"DRAGON","DRATINI","270" );
 
-			/*	  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message3",//getter);
-			request.setAttribute("character3", //getter);
-			request.setAttribute("type3",//getter;
-			request.setAttribute("evolution3", //getter);
-			request.setAttribute("baseExp3", //getter);*/
+			msg = "<center>" + b.getPokemonName() + "  #" + b.getPokemonNumber();
+			request.setAttribute("message3",b.getPokemonNumber());
+			request.setAttribute("character3", b.getCharacteristics());
+			request.setAttribute("type3",b.getType());
+			request.setAttribute("evolution3", b.getEvolution());
+			request.setAttribute("baseExp3", b.getBaseExp());
+
 		}
 		if (value4 != null) {
 
-			// Create the object for Mew class and use getters to retrieve the values	
-			/*	  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message4",//getter);
-			request.setAttribute("character4", //getter);
-			request.setAttribute("type4",//getter;
-			request.setAttribute("evolution4", //getter);
-			request.setAttribute("baseExp4", //getter);*/
+			// Create the object for Mew class and use getters to retrieve the values
+			Mew b=new Mew("Mew",151,"Mew is a Psychic-type Mythical Pokémon introduced in Generation I. Mew is notable for its unique ability to learn every Technical Machine, Technical Record & Hidden Machine.",
+					"PSYCHIC", "NONE","64");
+			msg = "<center>" + b.getPokemonName() + "  #" + b.getPokemonNumber();
+			request.setAttribute("message4",b.getPokemonNumber());
+			request.setAttribute("character4", b.getCharacteristics());
+			request.setAttribute("type4",b.getType());
+			request.setAttribute("evolution4", b.getEvolution());
+			request.setAttribute("baseExp4", b.getBaseExp());
 		}
 
 		if (value5 != null) {
 
 			// Create the object for Pikachu class and use getters to retrieve the values	
+			Pikachu b=new Pikachu("Pikachu",25,"Pikachu is an Electric-type Pokémon, which was introduced in Generation I. Over the years, Pikachu has become so popular that it serves as the Pokémon franchise\n" + 
+					" mascot.","ELECTRIC" ,"RAICHU" ,"112" );
 /*getter*/
-			/*	  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message5",//getter);
-			request.setAttribute("character5", //getter);
-			request.setAttribute("type5",//getter;
-			request.setAttribute("evolution5", //getter);
-			request.setAttribute("baseExp5", //getter);*/
+			msg = "<center>" + b.getPokemonName() + "  #" + b.getPokemonNumber();
+			request.setAttribute("message5",b.getPokemonNumber());
+			request.setAttribute("character5", b.getCharacteristics());
+			request.setAttribute("type5",b.getType());
+			request.setAttribute("evolution5", b.getEvolution());
+			request.setAttribute("baseExp5", b.getBaseExp());
 
 		}
 
