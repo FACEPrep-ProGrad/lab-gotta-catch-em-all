@@ -19,3 +19,42 @@ package model;
 //type = "FIRE"
 //evolution = "CHARMELEON"
 //baseExp = "240" 
+public class Charizard extends Pokemon{
+	String characteristics; 
+	String type;
+	String evolution;
+	int baseExp;
+	//constructor
+	public Charizard(String pokemonName,int pokemonNumber,String characteristics,String type, String evolution,int baseExp) {
+		super(pokemonName , pokemonNumber);
+		this.characteristics = characteristics;
+		this.type = type;
+		this.evolution = evolution;
+		this.baseExp = baseExp;
+	}
+	//getters and setters
+	public String getCharacteristics() {
+		return this.characteristics;
+	}
+	public void setCharacteristics(String characteristics) {
+		this.characteristics = characteristics;
+	}
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getEvolution() {
+		return this.evolution;
+	}
+	public void setEvolution(String evolution) {
+		this.evolution = evolution;
+	}
+	public int getBaseExp() {
+		return this.baseExp;
+	}
+	public void setBaseExp(int baseExp) {
+		this.baseExp = baseExp;
+	}
+}
