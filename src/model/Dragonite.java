@@ -15,7 +15,58 @@ package model;
 //Use the predefined values given below as constructor arguments 
 //pokemonName = Dragonite
 //pokemonNumber = 149
-//characteristics = "Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism."
+//characteristics = "Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokï¿½mon with human-like intelligence. It shows signs of altruism."
 //type = "DRAGON"
 //evolution = "DRATINI"
 //baseExp = "270" 
+public class Dragonite extends Pokemon{
+	private static String characteristics;
+	private static String type;
+	private static String evolution;
+	private static String baseExp;
+	
+	public static String getCharacteristics() {
+		return characteristics;
+	}
+
+	public void setCharacteristics(String characteristics) {
+		this.characteristics = characteristics;
+	}
+
+	public static String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public static String getEvolution() {
+		return evolution;
+	}
+
+	public void setEvolution(String evolution) {
+		this.evolution = evolution;
+	}
+
+	public static String getBaseExp() {
+		return baseExp;
+	}
+
+	public void setBaseExp(String baseExp) {
+		this.baseExp = baseExp;
+	}
+
+	public Dragonite(String pokemonName, int pokemonNumber,String characteristics,String type,String evolution,String baseExp) {
+		super(pokemonName, pokemonNumber);
+		this.characteristics=characteristics;	
+		this.type=type;
+		this.evolution=evolution;
+		this.baseExp=baseExp;		
+		// TODO Auto-generated constructor stub
+	}
+	
+
+	
+}
+
