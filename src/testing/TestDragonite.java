@@ -1,10 +1,9 @@
 package testing;
-/*
+
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import model.Charizard;
 import model.Dragonite;
 
 public class TestDragonite {
@@ -68,4 +67,3 @@ public class TestDragonite {
 		}
 	}
 }
-*/
